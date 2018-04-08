@@ -19,8 +19,10 @@ func (a Cat) shout() {
 	fmt.Println("miao miao miao")
 }
 func main()  {
-	d:=Dog{}
-	c:=Cat{}
+	var d Animal =Dog{}
+	var c Animal=Cat{}
 	c.shout()
+	d.shout()
+	d=c
 	d.shout()
 }
