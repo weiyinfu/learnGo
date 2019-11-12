@@ -25,7 +25,7 @@ func SendToMail(user, password, host, to, subject, body, mailtype string) error 
 func main() {
 	//smtp.buaa.edu.cn 25
 	user := "weiyinfu@buaa.edu.cn"
-	password := "20124003"
+	password := "xxxxxxx"
 	host := "smtp.buaa.edu.cn:465"
 	to := "1661686074@qq.com"
 
