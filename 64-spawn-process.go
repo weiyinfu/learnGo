@@ -1,9 +1,9 @@
 package main
 
 import (
-	"os/exec"
 	"fmt"
 	"io/ioutil"
+	"os/exec"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 	}
 	fmt.Println("> date")
 	fmt.Println(string(dateOut))
-	//Next we’ll look at a slightly more involved case where we pipe data to the external process on its stdin and collect the results from its stdout.
+	//Next we’ll look at a slightly more involved case where we pipe task to the external process on its stdin and collect the results from its stdout.
 
 	grepCmd := exec.Command("grep", "hello")
 	//Here we explicitly grab input/output pipes, start the process, write some input to it, read the resulting output, and finally wait for the process to exit.

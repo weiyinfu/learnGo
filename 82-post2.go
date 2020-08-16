@@ -1,10 +1,10 @@
 package main
 
 import (
+	"fmt"
+	"io/ioutil"
 	"net/http"
 	"strings"
-	"io/ioutil"
-	"fmt"
 )
 
 func main() {

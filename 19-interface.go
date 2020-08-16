@@ -18,11 +18,11 @@ type Cat struct {
 func (a Cat) shout() {
 	fmt.Println("miao miao miao")
 }
-func main()  {
-	var d Animal =Dog{}
-	var c Animal=Cat{}
+func main() {
+	var d Animal = Dog{}
+	var c Animal = Cat{}
 	c.shout()
 	d.shout()
-	d=c
+	d = c
 	d.shout()
 }

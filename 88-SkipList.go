@@ -1,10 +1,10 @@
 package main
 
 import (
-	"math/rand"
 	"fmt"
-	"strings"
+	"math/rand"
 	"strconv"
+	"strings"
 	"testing"
 )
 
@@ -40,7 +40,7 @@ func (sl *SkipList) Get(key Key) *Value {
 		if nex == nil {
 			layer--
 		} else if nex.key > key {
-			layer --
+			layer--
 		} else if nex.key == key {
 			break
 		} else {
@@ -64,7 +64,7 @@ func (sl *SkipList) Del(key Key) {
 		if nex == nil {
 			layer--
 		} else if nex.key > key {
-			layer --
+			layer--
 		} else if nex.key == key {
 			break
 		} else {
@@ -90,7 +90,7 @@ func (sl *SkipList) cutHeight() {
 	totalLayer := len(sl.head.level)
 	for i := totalLayer - 1; i >= 0; i-- {
 		if sl.head.level[i] == nil {
-			totalLayer --
+			totalLayer--
 		} else {
 			break
 		}
@@ -156,7 +156,7 @@ func (sl *SkipList) Put(key Key, value Value) {
 		if nex == nil {
 			layer--
 		} else if nex.key > key {
-			layer --
+			layer--
 		} else if nex.key == key {
 			break
 		} else {

@@ -25,4 +25,6 @@ func main() {
 	man := Man{}
 	man.shout()
 	man.run()
+	man.Animal3.shout()
+	man.Person.run()
 }

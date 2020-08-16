@@ -1,14 +1,15 @@
 package main
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
+
 /**
 Go语言包含简单的测试工具，遵循约定大于配置原则
 
 * 测试文件名必须以`_test`结尾
-* 测试函数名必须以`TEST`开头
+* 测试函数名必须以`Test`开头
 */
 func Reverse(s string) string {
 	r := []rune(s)

@@ -8,13 +8,13 @@ import "fmt"
 // 枚举值。Go语言并不支持众多其他语言明确支持的 enum 关键字。
 // 下面是一个常规的枚举表示法，其中定义了一系列整型常量：
 const (
-	Sunday     = iota //0
-	Monday            //1
-	Tuesday           //2
+	Sunday    = iota //0
+	Monday           //1
+	Tuesday          //2
 	Wednesday        //3
-	Thursday          //4
-	Friday            //5
-	Saturday          //6
+	Thursday         //4
+	Friday           //5
+	Saturday         //6
 
 	//同Go语言的其他符号（symbol）一样，以大写字母开头的常量在包外可见。
 	//以上例子中 numberOfDays 为包内私有，其他符号则可被其他包访问。

@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 const s string = "haha"
 
@@ -11,7 +13,6 @@ func main() {
 	fmt.Println(n)
 	const m = 2e30 / n
 	fmt.Println(m, math.Sin(m))
-
 
 	const (
 		SUN  = 1
@@ -30,7 +31,7 @@ func main() {
 		one = iota
 		two = iota
 	)
-	fmt.Println(one, two, )
+	fmt.Println(one, two)
 	const (
 		three = iota
 		four  = iota
@@ -53,8 +54,8 @@ func main() {
 	const (
 		ii = 1 << iota
 		j  = 3 << iota
-		k   //3<<2
-		l   //3<<3
+		k  //3<<2
+		l  //3<<3
 	)
 	fmt.Println(ii, j, k, l)
 

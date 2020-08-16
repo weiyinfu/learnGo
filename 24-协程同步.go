@@ -16,5 +16,5 @@ func worker(x chan bool) {
 func main() {
 	done := make(chan bool)
 	go worker(done)
-	<-done
+	<-done //从done中读取数据，直到协程执行完毕
 }

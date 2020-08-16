@@ -10,7 +10,7 @@ func main() {
 	for index, number := range []int{1, 2, 3, 4} {
 		fmt.Println(index, number)
 	}
-	for k, v := range (map[string]string{"username": "weidiao"}) {
+	for k, v := range map[string]string{"username": "weidiao"} {
 		fmt.Println(k, "=", v)
 	}
 }

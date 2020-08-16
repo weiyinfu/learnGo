@@ -7,7 +7,7 @@ import (
 
 /**
 * 使用不阻塞通道实现
-*/
+ */
 func main() {
 	message := make(chan string)
 	go func() {
@@ -22,6 +22,5 @@ func main() {
 		}
 	default:
 		fmt.Println("直接跳过")
-
 	}
 }

@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func main()  {
+func main() {
 	fmt.Println(os.Args)
 	fmt.Println(os.Args[0])
 }

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 )
+
 /**
 GO语言中的error是一个接口
 type error interface {

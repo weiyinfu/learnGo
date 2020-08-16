@@ -9,4 +9,8 @@ func main() {
 	for i := 0; i < 10; i++ {
 		fmt.Print(func(x int) int { return x + i }(i))
 	}
+	var haha = func() {
+		fmt.Println("haha")
+	}
+	haha()
 }

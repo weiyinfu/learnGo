@@ -1,9 +1,11 @@
 package main
 
+import "math/rand"
+
 func main() {
-	if x := 10; x > 0 {
-		print("x是个正数")
+	if x := rand.Int(); x%2 == 0 {
+		print("x是个偶数")
 	} else {
-		print("x是个负数")
+		print("x是个奇数")
 	}
 }

@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
-	"html/template"
 )
 
 type Page struct {
@@ -20,6 +20,7 @@ var editTemplate = `
 <div><input type="submit" value="Save"></div>
 </form>
 `
+
 //运行此程序，打开浏览器，访问localhost:8080/haha
 func main() {
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"regexp"
-	"fmt"
 	"bytes"
+	"fmt"
+	"regexp"
 )
 
 func main() {

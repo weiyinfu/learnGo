@@ -7,9 +7,9 @@ func add(x int, y int) int {
 }
 
 //命名返回值
-func sum(x, y, z int) (s,prod int) {
+func sum(x, y, z int) (s, prod int) {
 	s = x + y + z
-	prod=x*y*z
+	prod = x * y * z
 	return
 }
 func main() {

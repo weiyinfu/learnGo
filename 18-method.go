@@ -8,7 +8,7 @@ type Rectangle struct {
 }
 
 func (r *Rectangle) area() int {
-	ans:=r.width * r.height
+	ans := r.width * r.height
 	return ans
 }
 func (r Rectangle) length() int {

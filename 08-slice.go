@@ -7,7 +7,7 @@ func main() {
 	fmt.Println(s)
 
 	s[0] = "wei"
-	//会新创建一个对象
+	//append的时候，发现数组长度不够，会新创建一个对象
 	ss := append(s, "diao")
 	fmt.Println(ss)
 	ss[0] = "ha"

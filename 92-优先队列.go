@@ -42,7 +42,7 @@ func (pq *PriorityQueue) Pop() interface{} {
 	n := len(old)
 	item := old[n-1]
 	item.index = -1 // for safety
-	*pq = old[0: n-1]
+	*pq = old[0 : n-1]
 	return item
 }
 

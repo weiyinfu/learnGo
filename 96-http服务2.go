@@ -1,8 +1,9 @@
 package main
+
 import (
-"log"
-"net/http"
-"time"
+	"log"
+	"net/http"
+	"time"
 )
 
 func main() {
@@ -23,5 +24,5 @@ func (th *timeHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	tm := time.Now().Format(th.format)
 	log.Println(r.Body)
 	w.Write([]byte("time : " + tm))
-	w.Header()["content-type"] =[]string{"application/json"}
+	w.Header()["content-type"] = []string{"application/json"}
 }

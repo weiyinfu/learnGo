@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"strings"
 	"net/smtp"
+	"strings"
 )
 
 func SendToMail(user, password, host, to, subject, body, mailtype string) error {

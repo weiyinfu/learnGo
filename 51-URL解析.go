@@ -1,8 +1,8 @@
 package main
 
-import "fmt"
-import "net"
 import (
+	"fmt"
+	"net"
 	"net/url"
 )
 

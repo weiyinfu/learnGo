@@ -42,7 +42,7 @@ func main() {
 
 	/**
 	* 下面是反序列化的过程
-	*/
+	 */
 	byt := []byte(`{"mypage":2,"FRUITS":["apple","banana"]}`)
 	//声明一个变量
 	var stringObjMap map[string]interface{}

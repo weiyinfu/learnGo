@@ -1,8 +1,8 @@
 package main
 
 import (
-	"time"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -13,5 +13,5 @@ func main() {
 	print(now.Second(), now.Unix())
 	print(now.Nanosecond(), now.UnixNano())
 	print(secs, nanos)
-	print(time.Unix(now.Unix(),now.UnixNano()))
+	print(time.Unix(now.Unix(), now.UnixNano()))
 }

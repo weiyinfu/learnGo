@@ -1,14 +1,16 @@
 package main
 
 import (
-	"time"
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 /**
 老师出题,同学们抢答
 可是为啥同学们回答速度越来越快呢?
+
+使用select来选择最快返回的那一条
 **/
 func main() {
 	one := make(chan string)

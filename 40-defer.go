@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 )
 
 func createFile(filename string) *os.File {
@@ -12,7 +12,7 @@ func createFile(filename string) *os.File {
 	}
 	return f
 }
-func close_file(file *os.File) {
+func closeFile(file *os.File) {
 	fmt.Println("close")
 	file.Close()
 }
@@ -38,7 +38,7 @@ func deferStack() {
 }
 func main() {
 	f := createFile("haha.txt")
-	defer close_file(f)
+	defer closeFile(f)
 	write(f)
 	defer fmt.Println("这句话会在主函数执行完成之后打印")
 	fmt.Println("这句话会先打印")
