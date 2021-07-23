@@ -32,7 +32,6 @@ func main() {
 		x, y := rand.Int()%4-2, rand.Int()%4-2
 		z, err := div(x, y)
 		fmt.Println(x, y, z, err)
-		fmt.Scanln()
+		_, _ = fmt.Scanln()
 	}
-
 }

@@ -48,7 +48,7 @@ func main() {
 	fmt.Println(u.Fragment)
 	//To get query params in a string of k=v format, use RawQuery. You can also parse query params into a map. The parsed query param maps are from strings to slices of strings, so index into [0] if you only want the first value.
 
-	fmt.Println(u.RawQuery)
+	fmt.Println("rawQuery",u.RawQuery)
 	m, _ := url.ParseQuery(u.RawQuery)
 	fmt.Println(m)
 	fmt.Println(m["k"][0])

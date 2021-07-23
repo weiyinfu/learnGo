@@ -12,7 +12,7 @@ func main() {
 	ping := make(chan string, 1)
 	pong := make(chan string, 1)
 	go func(ping chan<- string, pong <-chan string) {
-		//此函数有两个管道参数，第一个ping是一个写管道，第二个参数pong是一个读管道
+		//此函数有两个管道参数，第一个ping是一个写管道，第二个参数pong是一个读管道，注意箭头的方向
 		for {
 			ping <- "ping"
 			fmt.Println(<-pong)

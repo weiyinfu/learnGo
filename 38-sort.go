@@ -25,6 +25,12 @@ func main() {
 	sort.Ints(a)
 	fmt.Println(a, sort.IntsAreSorted(a))
 	students := StudentList{{1}, {2}, {3}}
+	b := make([]Student, 10)
+	copy(b, students) //copy只是简单的copy
 	sort.Sort(students)
 	fmt.Println(students)
+	sort.Slice(b, func(i, j int) bool {
+		return b[i].score < b[j].score
+	})
+	fmt.Println(b)
 }

@@ -20,4 +20,6 @@ func main() {
 		}
 	}
 	fmt.Println(c)
+	d := make([]int, 3)
+	fmt.Println(d)
 }

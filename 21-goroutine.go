@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func haha(prefix string) {
-	for i := 0; i < 3; i++ {
-		fmt.Println(prefix, i)
-	}
-}
 func main() {
+	haha := func(prefix string) {
+		for i := 0; i < 3; i++ {
+			fmt.Println(prefix, i)
+		}
+	}
 	haha("one")
 	go haha("baga")
 	go func(prefix string) {

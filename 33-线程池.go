@@ -16,7 +16,7 @@ func main() {
 	tasks := [10]*Task{}
 	consumerCount := 2
 	producerCount := 3
-	wg:=sync.WaitGroup{}
+	wg := sync.WaitGroup{}
 	//消费者
 	for i := 0; i < consumerCount; i++ {
 		wg.Add(1)
